@@ -509,7 +509,7 @@ int main(int argc, char* argv[])
         if( s.inputCapture.isOpened() && key == 'g' )
         {
             mode = CAPTURING;
-            //imagePoints.clear();
+            imagePoints.clear();
         }
         //! [await_input]
     }

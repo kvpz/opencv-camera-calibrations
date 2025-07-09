@@ -1,0 +1,1 @@
+This directory holds several programs for calibrating cameras and camera setups that will produce video streams that will be fed into a video stitching gstreamer plugin.

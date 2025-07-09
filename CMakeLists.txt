@@ -10,7 +10,7 @@ find_package(OpenCV)
 find_package(OpenCV REQUIRED COMPONENTS aruco core) # QUIET)
 
 
-#add_executable(camcalib camera_calibration.cpp)
+#add_executable(camcalib.x camera_calibration.cpp)
 add_executable(camcalib camera_calibration_v4_11_0.cpp)
 
 target_link_libraries(camcalib ${OpenCV_LIBS})

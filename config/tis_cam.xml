@@ -30,7 +30,7 @@
   <!--<Input>"tiscam_clear.mp4"</Input>-->
   <!--<Input>"./test-videos/tiscam_5fps_1920x1200_1.mp4"</Input>-->
   <!--<Input>"front-center-chess2-short.m4v"</Input>-->
-  <Input>"./tiscam_5fps_calib2.mp4"</Input>
+  <Input>"./tiscam_5fps_calib1.mp4"</Input>
   <!--<Input>"tis-cam-calibration-images.xml"</Input>-->
   <!--  If true (non-zero) we flip the input images around the horizontal axis.-->
   <Input_FlipAroundHorizontalAxis>0</Input_FlipAroundHorizontalAxis>

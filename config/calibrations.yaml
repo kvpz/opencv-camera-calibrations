@@ -1,0 +1,48 @@
+- id: 20250708-01 # Unique ID: YYYYMMDD-NN
+  date: "2025-07-08"
+  scene: "Office desk setup with standard lighting."
+  cameras:
+    - name: "left"
+      model: "The Imaging Source DFK 36CX390-I67"
+      serial_number: "SN-10320223"
+      position: "Left camera, 15cm from center."
+      distortion: true
+      in_focus: true
+      fov: "60 degrees"
+    - name: "center"
+      model: "The Imaging Source DFM 37CX390-ML"
+      serial_number: "SN-11120626"
+      position: "Center camera."
+      distortion: true
+      in_focus: true
+      fov: "60 degrees"
+    - name: "right"
+      model: "The Imaging Source DFM 37CX390-ML"
+      serial_number: "SN-11120627"
+      position: "Right camera, 15cm from center."
+      distortion: true
+      in_focus: true
+      fov: "60 degrees"
+  baseline: "47cm between each camera"
+  gstreamer_pipeline: "gst-launch-1.0 ... ! videoconvert ! ... "
+  resolution: "1920x1200"
+  calibration_program:
+    name: "camera_calibration_v4_11_0.cpp"
+    version: "4.11.0"
+  platform:
+    recording: "NVIDIA Jetson AGX Orin"
+    calibration: "Desktop PC with Ubuntu 22.04"
+  notes: "Initial calibration for the three-camera rig."
+
+- Scene / context: 138cm (width)  x 99 cm (height) checkerboard (black square to black square)
+- Estimated overlap between the cameras: 20 %
+- 
+- video files recorded:
+left camera:
+center camera:
+right camera:
+
+- video frames recorded: 
+left camera:
+center camera:
+right camera: 
