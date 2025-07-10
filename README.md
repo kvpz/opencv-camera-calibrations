@@ -63,7 +63,7 @@ The `3calibration` program calibrates three cameras simultaneously in a stereo s
 
 #### Input File Format:
 
-The input file should list images in groups of 3 (one from each camera), with each line containing one image path:
+The input file should list images in groups of 3 (one from each camera), with each line containing one image path. Example:
 
 ```
 left_image_001.jpg
@@ -76,16 +76,6 @@ right_image_002.jpg
 ```
 
 The program expects images to be grouped sequentially by camera position for each capture session.
-
-### Running Python Scripts
-
-The Python scripts in the `scripts/` directory can be run directly. For example:
-
-```bash
-python scripts/calibration_manager.py
-```
-
-Please refer to the individual Python scripts for their specific usage and arguments.
 
 ## Calibration Programs Overview
 
@@ -118,14 +108,13 @@ Proper image capture is crucial for successful multi-camera calibration. Follow 
 
 - Use hardware synchronization if available (external trigger)
 - If using software synchronization, minimize delay between captures
-- Verify synchronization by checking that the chessboard position matches across all three images
+- Verify synchronization by checking that the chessboard (or any object) position matches across all three images
 
 ### Capture Methodology
 
 1. **Coverage Requirements:**
    - Capture 25-50 synchronized image sets (3 images per set)
    - Focus on the overlapping regions between cameras where stereo matching will occur
-   - Ensure the chessboard is visible in all three cameras simultaneously
 
 2. **Chessboard Positioning:**
    - **Distance variation:** Capture at near, medium, and far distances
